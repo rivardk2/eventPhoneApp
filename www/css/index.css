@@ -1,0 +1,582 @@
+body{
+  margin:0px;
+  color:#fff;
+  background-image: linear-gradient(rgba(181,226,255,1), rgba(0,58,95,1)) ;
+  background-repeat: no-repeat;
+}
+img{
+  width: 100%;
+    height: auto;
+}
+.container{
+  width:356px;
+}
+a,p,input{
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color:#fff;
+}
+@font-face {
+  font-family:'Open Sans';
+  src:url('../fonts/OpenSans-Light.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+h1,h2,h3{
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h3{
+    text-align: center;
+}
+#navi {
+    width: 100%;
+}
+#divbox{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  margin-bottom: 0px;
+  width:300px;
+  margin-left: 10px;
+}
+button{
+  outline:none;
+  text-align: center;
+   border-radius:40px;
+   background: none;
+   border: 1px solid #fff;
+   color:#fff;
+   font-family: 'Open Sans', sans-serif;
+   letter-spacing:1px;
+   text-shadow:0;
+   transition: all 0.25s ease;
+}
+#results { width: 100%;  }
+#results tr { width: 100%; }
+#results th {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    text-align: left;
+}
+#results th:nth-child(3) {
+    text-align: right;
+}
+#results td:nth-child(1) { width: 59%; }
+#results td {
+    width: 20%;
+    vertical-align: top;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+.price-form {
+    width: 100%;
+    display: flex;
+}
+.price-checkbox-div {
+    width: 50%;
+    position: relative;
+}
+.pcheckbox {
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    height: 1.5em;
+    width: 95%;
+    opacity: 0;
+}
+.pcheckbox:checked + label {
+    background-color: rgba(0,0,0,0.2);
+}
+.pricelabel {
+    display: block;
+    width: 85%;
+    height: 1.5em;
+	border: 1px solid #FFF;
+	border-radius: 40px;
+	padding: 3px 0.6em;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+}
+.categories{
+    width: 100%;
+    display: flex;
+}
+.category-checkbox-div {
+    position: relative;
+    margin: 0 auto;
+}
+.i-checklabel {
+    display: block;
+    width: 85%;
+    height: 1.5em;
+	border: 1px solid #FFF;
+	border-radius: 40px;
+	padding: 3px 0.6em;
+    margin: 10px auto;
+    margin-right: 70px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+}
+.checkbox {
+    position: absolute;
+    width: 35%;
+    margin-left: 20px;
+    height: 2.3em;
+    opacity: 0;
+}
+.checkbox:checked + label {
+    background-color: rgba(0,0,0,0.2);
+}
+.checklabel {
+    display: block;
+    width: 85%;
+    height: 1.5em;
+	border: 1px solid #FFF;
+	border-radius: 40px;
+	padding: 3px 0.6em;
+    margin: 10px auto;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11pt;
+}
+.showEventBtn {
+    width: 80%;
+    height: 2.5em;
+    font-size: 12pt;
+    /*background-color: rgba(0,0,0,0.1);*/
+    border: 2px solid #FFF;
+}
+.eTableCategoryName {
+    border-bottom: 1px solid #FFF;
+}
+.footer{
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  width: 356px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+}
+.expand{
+  padding:40px;
+}
+.cal{
+  margin: 0px;
+  display: block;
+  width:50px;
+  float:left;
+  margin-left: 80px;
+  padding-top: 30px;
+  width:15%;
+
+}
+.prof{
+  margin: 0px;
+  display: block;
+  width:50px;
+  float:right;
+  margin-right: 80px;
+  padding-top: 30px;
+  width:14%;
+}
+.cal1{
+  margin: 0px;
+  display: block;
+  margin-right: 10px;
+  padding-right: 10px;
+  margin-left:10px;
+  width:150px;
+  float:left;
+
+}
+.map{
+  margin: 0px;
+  display: block;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding-right: 10px;
+  float:right;
+  width:150px;
+
+}
+.heads{
+  font-size: 15px;
+  margin: 0px;
+  height:20px;
+  margin-top: 30px;
+}
+.heads1{
+  font-size: 15px;
+  margin: 0px;
+  margin-top: -60px;
+}
+.events{
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left:3px;
+}
+.sub{
+  font-size: 13px;
+  margin-top: -20px;
+  margin-left:3px;
+}
+.line{
+  border-bottom: solid 1px;
+    margin-left:3px;
+    margin-right:250px;
+}
+.form{
+  padding: 20px 0;
+  padding-left: 0px;
+}
+input{
+		display: block;
+		appearance: none;
+		outline: 0;
+		border: 2px solid;
+		background:transparent;
+		width: 200px;
+    height: 15px;
+
+		border-radius: 40px;
+		padding: 10px 15px;
+		margin: 0 auto 10px auto;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+
+		color: #fff;
+
+		transition-duration: 0.25s;
+		font-weight: 300;
+	}
+  .button{
+		appearance: none;
+		outline: 0;
+		background-color: transparent;
+		border: 2px solid;
+		padding: 10px 15px;
+		color: #fff;
+		border-radius: 40px;
+		width: 150px;
+    margin-bottom: 50px;
+		cursor: pointer;
+		font-size: 15px;
+    margin-left: 40px;
+  }
+  ::placeholder {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  }
+  .log{
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+    margin-left:0px;
+  }
+  .cal2{
+    margin: 0px;
+    display: block;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+
+  }
+  #login-button{
+    margin-left:100px;
+  }
+  .form2 {
+    padding: 40px;
+    max-width:600px;
+    margin:40px auto;
+  }
+  h1 {
+    text-align:center;
+    color:$white;
+    font-weight:$thin;
+    margin:0 0 40px;
+  }
+/*
+  label {
+    position:absolute;
+    transform:translateY(6px);
+    left:13px;
+    color:rgba(white,.5);
+    transition:all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size:18px;
+    margin-left: 15px;
+    margin-top:8px;
+    .req {
+    	margin:2px;
+    }
+  }
+
+  label.active {
+    transform:translateY(50px);
+    left:2px;
+    font-size:14px;
+    .req {
+      opacity:0;
+    }
+  }
+
+  label.highlight {
+  	color:white;
+  }
+*/
+  input, textarea {
+    display: block;
+		appearance: none;
+		outline: 0;
+		border: 2px solid;
+		background:transparent;
+		width: 200px;
+    height: 15px;
+
+		border-radius: 40px;
+		padding: 10px 15px;
+		margin: 0 auto 10px auto;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+
+		color: #fff;
+
+		transition-duration: 0.25s;
+		font-weight: 300;
+    }
+  }
+
+  textarea {
+    border:2px solid;
+    resize: vertical;
+  }
+
+  .field-wrap {
+    position:relative;
+    margin-bottom:40px;
+  }
+
+  .top-row {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    > div {
+      float:left;
+      width:48%;
+      margin-right:4%;
+      &:last-child {
+        margin:0;
+      }
+    }
+  }
+
+  .button2 {
+    border:0;
+    outline:none;
+    border-radius:0;
+    padding:15px 0;
+    font-size:2rem;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    color:#fff;
+    transition:all.5s ease;
+    -webkit-appearance: none;
+  }
+
+  .button-block {
+    display:block;
+    width:100%;
+    margin-left: 0px;
+  }
+
+  .forgot {
+    margin-top:-20px;
+    text-align:right;
+  }
+
+  .sign{
+    border: 2px solid #fff;
+    border-radius: 40px;
+    height:30px;
+    padding-bottom: 10px;
+  }
+  .tab-active{
+    list-style: none;
+    font-size: 20px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 5px;
+
+  }
+  .tab{
+      float:right;
+      margin-right: 25px;
+      list-style:none;
+      font-size: 20px;
+      margin-top: 5px;
+  }
+  .signupf{
+    margin-bottom: 10px;
+    margin-top: 35px;
+    font-size: 35px;
+  }
+  .active{
+    color:#005FA0;
+
+  }
+  .event1{
+    margin: 0px;
+    font-size: 13px;
+    margin-left: 10px;
+    float: left;
+  }
+  .time{
+    float:right;
+    margin: 0px;
+    font-size: 13px;
+    margin-right: 50px;
+  }
+  .day{
+    float:right;
+    margin: 0px;
+    font-size: 13px;
+    margin-right: 20px;
+  }
+
+
+/* Divs the popups are contained in */
+  .popup {
+    position: relative;
+    /* display: inline-block; */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+
+  /* The actual popup */
+  .popup .popuptext2 {
+    visibility: hidden;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(0,58,95,1);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -120px;
+    margin-top: 150px;
+  }
+  .popup2 .popuptext3 {
+    visibility: hidden;
+    width: 250px;
+    height: 100px;
+    background-color: rgba(0,58,95,1);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -120px;
+    margin-top: 150px;
+  }
+
+  /* Popup arrow */
+
+
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  .popup2 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  .popup .from{
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+    float: left;
+  }
+  .popup .to{
+    margin: 0px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+    float: left;
+  }
+  .datesub {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 150px;
+
+  }
+  .button3{
+		appearance: none;
+		outline: 0;
+		background-color: transparent;
+		border: 2px solid;
+		padding: 5px 10px;
+		color: #fff;
+		border-radius: 40px;
+		width: 100px;
+    margin-top: 20px;
+		cursor: pointer;
+		font-size: 15px;
+    margin-left: 75px;
+  }
+  .select{
+    font-size: 19px;
+    margin: 0px;
+  }
+  .choose{
+    margin: 0px;
+    margin-top: 30px;
+  }
+  .skip{
+    margin-left: 163px;
+    margin-top: -40px;
+  }
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  @media only screen and (min-width: 361px){
+    .container{
+      margin-left:auto;
+      margin-right:auto;
+
+    }
+  }
